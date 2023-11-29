@@ -7,5 +7,21 @@ The tests are now failing on the main branch.
 Add a GitHub Action workflow (or anything else) so that this is less
 likely to happen in the future
 
+If you do well, you should have a pull request that introduced a bug
+triggering a failed pipeline with a test failing for the good reason.
 
 
+## Going further
+
+* You probably wrote your workflow so that `pytest` is installed everytime - can
+  you speed things up by using a cache ?
+
+* Add an other workflow that runs `black --check`
+
+* Run the tests with Python 3.10, 3.11 and 3.12
+ 
+* Run the tests on Linux, macOS, Windows
+ 
+ * Switch to `pre-commit` for running black - and adapt the CI workflows
+
+ * Publish the docs using GitHub Pages
