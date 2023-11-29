@@ -22,6 +22,4 @@ triggering a failed pipeline with a test failing for the good reason.
  
 * Run the tests on Linux, macOS, Windows
  
- * Switch to `pre-commit` for running black - and adapt the CI workflows
-
- * Publish the docs using GitHub Pages
+ * Install and setup `pre-commit` for running black locally - adapt CI workflows accordingly
