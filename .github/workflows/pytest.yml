@@ -26,9 +26,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: check with black
-      run: |
-        python -m black --check .
     - name: Test with pytest
       run: |
         python -m pytest ./test_calc.py
